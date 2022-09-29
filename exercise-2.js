@@ -1,5 +1,5 @@
 function nicknameMap(persons) {
-  // ...
+  return persons.map((person) => `${person.name}-${person.age}`);
 }
 
 const persons = [
@@ -18,11 +18,3 @@ const persons = [
 const nicknames = nicknameMap(persons);
 console.log(persons);
 console.log(nicknames);
-
-function nicknameMap(people) {
-  var arrNikName = [];
-  for (let i = 0; i < people.length; i++) {
-    arrNikName.push(people[i].name + "-" + people[i].age);
-  }
-  return arrNikName;
-}
